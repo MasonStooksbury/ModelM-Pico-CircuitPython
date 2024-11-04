@@ -2,6 +2,8 @@
 
 Reviving an old IBM Model M keyboard with a Raspberry Pi Pico and CircuitPython
 
+![Keyboard wired up to the Pico](https://github.com/MasonStooksbury/ModelM-Pico-CircuitPython/blob/main/pictures/keyboard_wired_up.jpg?raw=true)
+
 ## Installation
 
 
