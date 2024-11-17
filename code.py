@@ -15,25 +15,30 @@ layout = KeyboardLayoutUS(kbd)
 key_map = {
  'A': {'S': {'keyname': 'LEFT_CONTROL', 'keycode': '224'},
        'W': {'keyname': 'RIGHT_CONTROL', 'keycode': '228'}},
- 'B': {'W': {'keyname': 'RIGHT_SHIFT', 'keycode': '229'}},
+ 'B': {'W': {'keyname': 'RIGHT_SHIFT', 'keycode': '229'},
+       'R': {'keyname': 'LEFT_SHIFT', 'keycode': '225'},},
  'C': {'Q': {'keyname': 'ESCAPE', 'keycode': '41'},
+       'R': {'keyname': 'TAB', 'keycode': '43'},
        'S': {'keyname': 'GRAVE_ACCENT', 'keycode': '53'},
        'T': {'keyname': 'ONE', 'keycode': '30'},
        'U': {'keyname': 'Q', 'keycode': '20'},
        'V': {'keyname': 'A', 'keycode': '4'},
        'W': {'keyname': 'Z', 'keycode': '29'}},
- 'D': {'S': {'keyname': 'F1', 'keycode': '58'},
+ 'D': {'R': {'keyname': 'CAPS_LOCK', 'keycode': '57'},
+       'S': {'keyname': 'F1', 'keycode': '58'},
        'T': {'keyname': 'TWO', 'keycode': '31'},
        'U': {'keyname': 'W', 'keycode': '26'},
        'V': {'keyname': 'S', 'keycode': '22'},
        'W': {'keyname': 'X', 'keycode': '27'}},
  'E': {'Q': {'keyname': 'F4', 'keycode': '61'},
+       'R': {'keyname': 'F3', 'keycode': '60'},
        'S': {'keyname': 'F2', 'keycode': '59'},
        'T': {'keyname': 'THREE', 'keycode': '32'},
        'U': {'keyname': 'E', 'keycode': '8'},
        'V': {'keyname': 'D', 'keycode': '7'},
        'W': {'keyname': 'C', 'keycode': '6'}},
  'F': {'Q': {'keyname': 'G', 'keycode': '10'},
+       'R': {'keyname': 'T', 'keycode': '23'},
        'S': {'keyname': 'FIVE', 'keycode': '34'},
        'T': {'keyname': 'FOUR', 'keycode': '33'},
        'U': {'keyname': 'R', 'keycode': '21'},
@@ -41,12 +46,14 @@ key_map = {
        'W': {'keyname': 'V', 'keycode': '25'},
        'X': {'keyname': 'B', 'keycode': '5'}},
  'G': {'Q': {'keyname': 'F5', 'keycode': '62'},
+       'R': {'keyname': 'BACKSPACE', 'keycode': '42'},
        'S': {'keyname': 'F9', 'keycode': '66'},
        'T': {'keyname': 'F10', 'keycode': '67'},
        'V': {'keyname': 'BACKSLASH', 'keycode': '49'},
        'W': {'keyname': 'ENTER', 'keycode': '40'},
        'X': {'keyname': 'SPACE', 'keycode': '44'}},
  'H': {'Q': {'keyname': 'H', 'keycode': '11'},
+       'R': {'keyname': 'Y', 'keycode': '28'},
        'S': {'keyname': 'SIX', 'keycode': '35'},
        'T': {'keyname': 'SEVEN', 'keycode': '36'},
        'U': {'keyname': 'U', 'keycode': '24'},
@@ -54,29 +61,34 @@ key_map = {
        'W': {'keyname': 'M', 'keycode': '16'},
        'X': {'keyname': 'N', 'keycode': '17'}},
  'I': {'Q': {'keyname': 'F6', 'keycode': '63'},
+       'R': {'keyname': 'RIGHT_BRACKET', 'keycode': '48'},
        'S': {'keyname': 'EQUALS', 'keycode': '46'},
        'T': {'keyname': 'EIGHT', 'keycode': '37'},
        'U': {'keyname': 'I', 'keycode': '12'},
        'V': {'keyname': 'K', 'keycode': '14'},
        'W': {'keyname': 'COMMA', 'keycode': '54'}},
- 'J': {'S': {'keyname': 'F8', 'keycode': '65'},
+ 'J': {'R': {'keyname': 'F7', 'keycode': '64'},
+       'S': {'keyname': 'F8', 'keycode': '65'},
        'T': {'keyname': 'NINE', 'keycode': '38'},
        'U': {'keyname': 'O', 'keycode': '18'},
        'V': {'keyname': 'L', 'keycode': '15'},
        'W': {'keyname': 'PERIOD', 'keycode': '55'}},
  'K': {'Q': {'keyname': 'QUOTE', 'keycode': '52'},
+       'R': {'keyname': 'LEFT_BRACKET', 'keycode': '47'},
        'S': {'keyname': 'MINUS', 'keycode': '45'},
        'T': {'keyname': 'ZERO', 'keycode': '39'},
        'U': {'keyname': 'P', 'keycode': '19'},
        'V': {'keyname': 'SEMICOLON', 'keycode': '51'},
        'X': {'keyname': 'FORWARD_SLASH', 'keycode': '56'}},
  'L': {'S': {'keyname': 'DELETE', 'keycode': '76'},
+       'R': {'keyname': 'KEYPAD_FOUR', 'keycode': '92'},
        'T': {'keyname': 'F11', 'keycode': '68'},
        'U': {'keyname': 'KEYPAD_SEVEN', 'keycode': '95'},
        'V': {'keyname': 'KEYPAD_ONE', 'keycode': '89'},
        'W': {'keyname': 'KEYPAD_NUMLOCK', 'keycode': '83'},
        'X': {'keyname': 'DOWN_ARROW', 'keycode': '81'}},
  'M': {'Q': {'keyname': 'KEYPAD_ZERO', 'keycode': '98'},
+       'R': {'keyname': 'KEYPAD_FIVE', 'keycode': '93'},
        'S': {'keyname': 'INSERT', 'keycode': '73'},
        'T': {'keyname': 'F12', 'keycode': '69'},
        'U': {'keyname': 'KEYPAD_EIGHT', 'keycode': '96'},
@@ -84,6 +96,7 @@ key_map = {
        'W': {'keyname': 'KEYPAD_FORWARD_SLASH', 'keycode': '84'},
        'X': {'keyname': 'RIGHT_ARROW', 'keycode': '79'}},
  'N': {'Q': {'keyname': 'KEYPAD_PERIOD', 'keycode': '99'},
+       'R': {'keyname': 'KEYPAD_SIX', 'keycode': '94'},
        'S': {'keyname': 'PAGE_UP', 'keycode': '75'},
        'T': {'keyname': 'PAGE_DOWN', 'keycode': '78'},
        'U': {'keyname': 'KEYPAD_NINE', 'keycode': '97'},
@@ -123,14 +136,14 @@ O = {'pin': digitalio.DigitalInOut(board.GP14), 'name': 'O'}
 P = {'pin': digitalio.DigitalInOut(board.GP15), 'name': 'P'}
 
 # Rows
-Q = {'pin': digitalio.DigitalInOut(board.GP16), 'name': 'Q'}
-R = {'pin': digitalio.DigitalInOut(board.GP17), 'name': 'R'}
-S = {'pin': digitalio.DigitalInOut(board.GP18), 'name': 'S'}
-T = {'pin': digitalio.DigitalInOut(board.GP19), 'name': 'T'}
-U = {'pin': digitalio.DigitalInOut(board.GP20), 'name': 'U'}
-V = {'pin': digitalio.DigitalInOut(board.GP21), 'name': 'V'}
-W = {'pin': digitalio.DigitalInOut(board.GP22), 'name': 'W'}
-X = {'pin': digitalio.DigitalInOut(board.GP26), 'name': 'X'}
+X = {'pin': digitalio.DigitalInOut(board.GP16), 'name': 'X'}
+W = {'pin': digitalio.DigitalInOut(board.GP17), 'name': 'W'}
+V = {'pin': digitalio.DigitalInOut(board.GP18), 'name': 'V'}
+U = {'pin': digitalio.DigitalInOut(board.GP19), 'name': 'U'}
+T = {'pin': digitalio.DigitalInOut(board.GP20), 'name': 'T'}
+S = {'pin': digitalio.DigitalInOut(board.GP21), 'name': 'S'}
+R = {'pin': digitalio.DigitalInOut(board.GP22), 'name': 'R'}
+Q = {'pin': digitalio.DigitalInOut(board.GP26), 'name': 'Q'}
 
 # I mainly setup everything this way so it'd be easy to swap the matrix if things got weird
 cols = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P]
@@ -213,11 +226,12 @@ is_shift = False
 is_alt = False
 is_ctrl = False
 
+
 loop = True
 while loop:
     # First, check all the modifier keys and see if we're pressing any. This makes the modifying logic a lot easier
     is_shift, is_alt, is_ctrl = checkAndPressModifiers(is_shift, is_alt, is_ctrl)
-    
+
     # Loop through all the columns so we can start scanning
     for col in cols:
         # Send power down the column so we can begin reading keys row by row
@@ -225,7 +239,7 @@ while loop:
         col['pin'].value = True
         for row in rows:
             pin = pin_dict[col['name']][row['name']]
-            
+
             # These next few lines will be removed once I have all the keys mapped. I have some broken keys and they aren't in the key_map
             keyname = 'wee'
             try:
